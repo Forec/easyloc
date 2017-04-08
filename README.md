@@ -23,6 +23,9 @@ ghc -O2 easyloc.hs -threaded -rtsopts
 ## 使用
 执行 `easyloc [Language] [path]` 对指定目录下的文件按指定语言的语法规则进行统计。
 
+已支持语言选项：
+* `C`：C 和 C++
+
 可以通过增加运行时选项 `+RTS -Ni` 提高效率，默认情况下 easyloc 只使用单核，通过改变参数 i 的值可使用多核。
 
 ## 待实现功能
